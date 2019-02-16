@@ -1,6 +1,6 @@
 # Azure Stack PowerShell
 
-This repo contains a Dockerfile and script to get you up and running with[Azure Stack](https://docs.microsoft.com/azure/azure-stack/) compatible PowerShell isolated in a Docker container.
+This repo contains a Dockerfile and script to get you up and running with [Azure Stack](https://docs.microsoft.com/azure/azure-stack/) compatible PowerShell isolated in a Docker container.
 
 PowerShell provides a programmatic way to interact with the Azure Resource  Manager. You can either work with an interactive command prompt or write scripts if you are automatic tasks.
 
