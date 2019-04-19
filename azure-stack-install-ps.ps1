@@ -7,7 +7,7 @@ Import-Module -Name PackageManagement -ErrorAction Stop
 Get-PSRepository -Name "PSGallery"
 
 Install-Module AzureRM -RequiredVersion 2.4.0 -Force
-Install-Module -Name AzureStack -RequiredVersion 1.7.0 -Force
+Install-Module -Name AzureStack -RequiredVersion 1.7.1 -Force
 
 cd \
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12

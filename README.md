@@ -12,7 +12,7 @@ This repo contains a Dockerfile that will install the Azure Stack module the com
 
 - You will need to have [Docker](https://docs.docker.com/install/) installed if you would like to use the Docker File.
 - You will need to run Docker using Windows containers which will require Windows 10. When running Docker, switch to Windows containers.
-- You will also want to have access to Azure Stack. Azure Stack is a version of Azure that can run on-premises within a local datacenter. You can read more about [Azure Stack at Microsoft.com](https://azure.microsoft.com/en-us/overview/azure-stack/). 
+- You will also want to have access to Azure Stack. Azure Stack is a version of Azure that can run on-premises within a local datacenter. You can read more about [Azure Stack at Microsoft.com](https://azure.microsoft.com/overview/azure-stack/). 
 
 ## Use the Dockerfile
 
@@ -38,4 +38,4 @@ The Dockerfile opens the Microsoft image [microsoft/windowsservercore](https://h
 
 ## Next steps
 
-You read more using PowerShell on Azure Stack in the article, "[Install PowerShell for Azure Stack](https://docs.microsoft.com/azure/azure-stack/azure-stack-powershell-install)."
+You read more using PowerShell on Azure Stack in the article, "[Install PowerShell for Azure Stack](https://docs.microsoft.com/en-us/azure-stack/operator/azure-stack-powershell-install)."
