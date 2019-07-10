@@ -2,12 +2,16 @@ Start-Process powershell -Verb runAs
 
 Find-PackageProvider -Name 'Nuget' -ForceBootstrap -IncludeDependencies
 
-Import-Module -Name PowerShellGet -ErrorAction Stop
+Import-Module -Name PowerShellGet -ErrorActiStop
 Import-Module -Name PackageManagement -ErrorAction Stop
 Get-PSRepository -Name "PSGallery"
 
-Install-Module AzureRM -RequiredVersion 2.4.0 -Force
-Install-Module -Name AzureStack -RequiredVersion 1.7.1 -Force
+Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted 
+Install-Module -Name AzureRM.BootStrapper -Force
+
+Get-AzureRMProfile -Update
+Use-AzureRmProfile -Profile 2019-03-01-hybrid -Force
+Install-Module -Name AzureStack -RequiredVersion 1.7.2
 
 cd \
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
